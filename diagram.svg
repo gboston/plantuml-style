@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="svgTag" contentscripttype="application/ecmascript" contentstyletype="text/css" height="941px" preserveAspectRatio="none" style="width: 1561px; height: 941px; background: rgb(255, 255, 255); --primary-color:#cccccc; --secondary-color:#ffffff; --tertiary-color:#fbf9eb; --quaternary-color:#cccccc; --text-color:#333333; --line-color:#009ddc; --label-border-color:#cccccc; --label-background-color:#ffffff; --label-text-color:#009ddc; --box-back-color:#f5f5f5; --box-stroke-color:#f5f5f5; --font-stack:Roboto Condensed; --participant-stroke-width:2; --border-thickness:1; --font-size:14;" version="1.1" viewBox="0 0 1561 941" width="1561px" zoomAndPan="magnify"><defs><style>
+
+    svg g ellipse,
+    svg g circle,
+    svg g rect {
+      stroke: var(--primary-color);
+      stroke-width: var(--participant-stroke-width);
+      /* fill: url(#image); */
+      fill: var(--secondary-color);
+      stroke-dasharray: 7500;
+      animation: draw 5s linear;
+    }
+
+    svg g path {
+      fill: var(--tertiary-color);
+      stroke: var(--quaternary-color);
+      stroke-width: 1.5;
+      stroke-dasharray: 7500;
+      animation: draw 5s linear;
+    }
+
+    svg g polygon {
+      fill: var(--line-color);
+      stroke-dasharray: 7500;
+      animation: draw 5s linear;
+    }
+
+    svg g line,
+    svg g polyline {
+      stroke: var(--line-color);
+      stroke-width: var(--border-thickness);
+      stroke-dasharray: 7500;
+      animation: draw 5s linear;
+    }
+
+    svg g text {
+      fill: var(--text-color);
+      font-family: var(--font-stack), "Tahoma";
+      font-size: 14;
+    }
+
+    svg g line.dashed {
+      stroke-dasharray: 5, 5;
+      animation: dash 1s infinite;
+    }
+
+    svg g line.dotted {
+      stroke-dasharray: 2, 2;
+      animation: dash 1s infinite;
+    }
+
+    svg g line.skipped {
+      stroke-dasharray: 1, 4;
+      animation: dash 1s infinite;
+    }
+
+    svg g line.labelDivider {
+      stroke-width: 2px;
+    }
+
+    svg g .label {
+      stroke: var(--label-border-color);
+      fill: var(--label-background-color);
+    }
+    svg g .labelText {
+      fill: var(--label-text-color);
+    }
+
+    svg g path.actor {
+      stroke: var(--primary-color);
+      stroke-width: 2;
+    }
+
+    svg g path.note {
+      stroke: var(--quaternary-color);
+      fill: var(--tertiary-color);
+      stroke-width: 1;
+      font-size: 12;
+    }
+    svg g polygon.note {
+      stroke: var(--quaternary-color);
+      fill: var(--tertiary-color);
+      stroke-width: 1;
+      font-size: 12;
+    }
+
+    svg g .transparent {
+      fill: none;
+    }
+
+    svg g path.database {
+      fill: var(--secondary-color);
+      stroke: var(--primary-color);
+      stroke-width: 1.5px;
+    }
+
+    svg g path.squiggly {
+      fill: none !important;
+      stroke: var(--line-color) !important;
+    }
+
+    svg g rect.box {
+      fill: var(--box-back-color);
+      stroke: var(--box-stroke-color);
+    }
+    svg g rect.titleBox {
+      fill: none;
+      stroke: white;
+      stroke-width: 5;
+
+    }
+    svg g line.divider {
+      stroke: var(--primary-color);
+      stroke-width: 3.5;
+    }
+    svg g line.altDivider {
+      stroke: var(--primary-color);
+      stroke-dasharray: 2, 2;
+    }
+
+
+    svg g path.alt {
+      fill: var(--primary-color);
+      stroke: var(--primary-color);
+    }
+
+    svg g path.actorClass {
+      fill: var(--primary-color);
+      stroke: var(--primary-color);
+    }
+
+    </style>
+    </defs><g><rect height="118.2031" rx="0.5" ry="0.5" width="904" x="10" y="410.5547"></rect><line x1="44" x2="44" y1="94.625" y2="934.1172"></line><line x1="270.5" x2="270.5" y1="94.625" y2="934.1172"></line><line x1="909" x2="909" y1="94.625" y2="934.1172"></line><line x1="1066" x2="1066" y1="94.625" y2="934.1172"></line><line x1="1360.5" x2="1360.5" y1="94.625" y2="934.1172"></line><svg x="19" y="20" width="45px" height="45px" viewBox="0 -1 45 45" version="1.1" name="participantshape"><g id="surface1"><path class="actorClass" name="participantshape" d="M 38.410156 29.089844 C 35.960938 26.640625 33.042969 24.824219 29.859375 23.726562 C 33.269531 21.378906 35.507812 17.449219 35.507812 13.007812 C 35.507812 5.835938 29.671875 0 22.5 0 C 15.328125 0 9.492188 5.835938 9.492188 13.007812 C 9.492188 17.449219 11.730469 21.378906 15.140625 23.726562 C 11.957031 24.824219 9.039062 26.640625 6.589844 29.089844 C 2.339844 33.339844 0 38.988281 0 45 L 3.515625 45 C 3.515625 34.53125 12.03125 26.015625 22.5 26.015625 C 32.96875 26.015625 41.484375 34.53125 41.484375 45 L 45 45 C 45 38.988281 42.660156 33.339844 38.410156 29.089844 Z M 22.5 22.5 C 17.265625 22.5 13.007812 18.242188 13.007812 13.007812 C 13.007812 7.773438 17.265625 3.515625 22.5 3.515625 C 27.734375 3.515625 31.992188 7.773438 31.992188 13.007812 C 31.992188 18.242188 27.734375 22.5 22.5 22.5 Z M 22.5 22.5 "></path></g></svg><text font-family="sans-serif" font-size="16" lengthAdjust="spacing" textLength="34" x="24" y="86.8516">user</text><rect height="40.625" rx="0.5" ry="0.5" width="147" x="197.5" y="53" name="participantshape"></rect><text font-family="sans-serif" font-size="16" lengthAdjust="spacing" textLength="125" x="208.5" y="78.8516">Digital Channel</text><text font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96" x="858" y="87.3232">Local storage</text><path d="M891,34.3281 C891,24.3281 909,24.3281 909,24.3281 C909,24.3281 927,24.3281 927,34.3281 L927,60.3281 C927,70.3281 909,70.3281 909,70.3281 C909,70.3281 891,70.3281 891,60.3281 L891,34.3281 " class="database"></path><path d="M891,34.3281 C891,44.3281 909,44.3281 909,44.3281 C909,44.3281 927,44.3281 927,34.3281 " class="null transparent"></path><rect height="40.625" rx="0.5" ry="0.5" width="184" x="974" y="53" name="participantshape"></rect><text font-family="sans-serif" font-size="16" lengthAdjust="spacing" textLength="162" x="985" y="78.8516">SF Commerce Cloud</text><rect height="40.625" rx="0.5" ry="0.5" width="195" x="1263.5" y="53" name="participantshape"></rect><text font-family="sans-serif" font-size="16" lengthAdjust="spacing" textLength="173" x="1274.5" y="78.8516">SAP API Management</text><polygon points="259,129.7578,269,133.7578,259,137.7578,263,133.7578"></polygon><line x1="44" x2="265" y1="133.7578" y2="133.7578"></line><circle r="12" cx="59.8" cy="118.6919" name="label" class="label"></circle><text font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="55" y="123.6919" class="labelText">1</text><text font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="174" x="76" y="124.6919">Enters credentials, submits</text><polygon points="1054,166.8906,1064,170.8906,1054,174.8906,1058,170.8906"></polygon><line x1="271" x2="1060" y1="170.8906" y2="170.8906"></line><circle r="12" cx="286.8" cy="155.8247" name="label" class="label"></circle><text font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="282" y="160.8247" class="labelText">2</text><text font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="550" x="303" y="161.8247">Send credentials via API POST /customers/auth with Authorization header "Basic Auth"</text><polygon points="282,204.0234,272,208.0234,282,212.0234,278,208.0234"></polygon><line x1="276" x2="1065" y1="208.0234" y2="208.0234"></line><circle r="12" cx="296.8" cy="192.9575" name="label" class="label"></circle><text font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="8" x="292" y="197.9575" class="labelText">3</text><text font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="188" x="312" y="198.9575">Access &amp; refresh token (JWT)</text><line x1="271" x2="313" y1="245.1563" y2="245.1563"></line><line x1="313" x2="313" y1="245.1563" y2="258.1563"></line><line x1="272" x2="313" y1="258.1563" y2="258.1563"></line><polygon points="282,254.1563,272,258.1563,282,262.1563,278,258.1563"></polygon><circle r="12" cx="286.8" cy="230.0903" name="label" class="label"></circle><text font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="282" y="235.0903" class="labelText">4</text><text font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="153" x="303" y="236.0903">Show dialog for pincode</text><polygon points="259,291.2891,269,295.2891,259,299.2891,263,295.2891"></polygon><line x1="44" x2="265" y1="295.2891" y2="295.2891"></line><circle r="12" cx="59.8" cy="280.2231" name="label" class="label"></circle><text font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="55" y="285.2231" class="labelText">5</text><text font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="95" x="76" y="286.2231">Enters pincode</text><line x1="271" x2="313" y1="332.4219" y2="332.4219"></line><line x1="313" x2="313" y1="332.4219" y2="345.4219"></line><line x1="272" x2="313" y1="345.4219" y2="345.4219"></line><polygon points="282,341.4219,272,345.4219,282,349.4219,278,345.4219"></polygon><circle r="12" cx="286.8" cy="317.356" name="label" class="label"></circle><text font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="282" y="322.356" class="labelText">6</text><text font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="479" x="303" y="323.356">Stores JWT Token encrypted with pinocde &amp; store hashed value of pincode</text><line x1="271" x2="313" y1="382.5547" y2="382.5547"></line><line x1="313" x2="313" y1="382.5547" y2="395.5547"></line><line x1="272" x2="313" y1="395.5547" y2="395.5547"></line><polygon points="282,391.5547,272,395.5547,282,399.5547,278,395.5547"></polygon><circle r="12" cx="286.8" cy="367.4888" name="label" class="label"></circle><text font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="282" y="372.4888" class="labelText">7</text><text font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="157" x="303" y="373.4888">Shows biometrics option</text><path d="M10.5,410.5547 L84,410.5547 L84,425.5547 L74,435.5547 L10,435.5547 L10,411.0547 A0.5,0.5 0 0 1 10.5,410.5547 "></path><rect height="118.2031" rx="0.5" ry="0.5" width="904" x="10" y="410.5547" class="null transparent"></rect><text font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="21" x="29" y="427.6216">alt</text><text font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="132" x="103" y="426.7651">[enables (optional)]</text><polygon points="259,466.625,269,470.625,259,474.625,263,470.625"></polygon><line x1="44" x2="265" y1="470.625" y2="470.625"></line><circle r="12" cx="59.8" cy="455.5591" name="label" class="label"></circle><text font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="55" y="460.5591" class="labelText">8</text><text font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="63" x="76" y="461.5591">Clicks yes</text><line x1="271" x2="313" y1="507.7578" y2="507.7578"></line><line x1="313" x2="313" y1="507.7578" y2="520.7578"></line><line x1="272" x2="313" y1="520.7578" y2="520.7578"></line><polygon points="282,516.7578,272,520.7578,282,524.7578,278,520.7578"></polygon><circle r="12" cx="286.8" cy="492.6919" name="label" class="label"></circle><text font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="282" y="497.6919" class="labelText">9</text><text font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="595" x="303" y="498.6919">Stores refresh token, which is only accessible via biometrics option (restricted by the device)</text><line x1="271" x2="313" y1="564.8906" y2="564.8906"></line><line x1="313" x2="313" y1="564.8906" y2="577.8906"></line><line x1="272" x2="313" y1="577.8906" y2="577.8906"></line><polygon points="282,573.8906,272,577.8906,282,581.8906,278,577.8906"></polygon><circle r="14" cx="291.6" cy="548.8247" name="label" class="label"></circle><text font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="19" x="282" y="554.8247" class="labelText">10</text><text font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="204" x="313" y="555.8247">Access token stored in memory</text><polygon points="1054,611.0234,1064,615.0234,1054,619.0234,1058,615.0234"></polygon><line x1="271" x2="1060" y1="615.0234" y2="615.0234"></line><circle r="14" cx="291.6" cy="598.9575" name="label" class="label"></circle><text font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="18" x="282" y="604.9575" class="labelText">11</text><text font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="291" x="312" y="605.9575">Retrieve user info /customers/{customer_id}</text><polygon points="282,648.1563,272,652.1563,282,656.1563,278,652.1563"></polygon><line x1="276" x2="1065" y1="652.1563" y2="652.1563"></line><circle r="14" cx="301.6" cy="636.0903" name="label" class="label"></circle><text font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="18" x="292" y="642.0903" class="labelText">12</text><text font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="147" x="322" y="643.0903">Respond with user info</text><line x1="271" x2="313" y1="689.2891" y2="689.2891"></line><line x1="313" x2="313" y1="689.2891" y2="702.2891"></line><line x1="272" x2="313" y1="702.2891" y2="702.2891"></line><polygon points="282,698.2891,272,702.2891,282,706.2891,278,702.2891"></polygon><circle r="14" cx="291.6" cy="673.2231" name="label" class="label"></circle><text font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="17" x="282" y="679.2231" class="labelText">13</text><text font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="158" x="311" y="680.2231">Redirect to home screen</text><rect height="3" width="1554" x="0" y="735.4375" class="divider"></rect><line x1="0" x2="1554" y1="735.4375" y2="735.4375" class="divider"></line><line x1="0" x2="1554" y1="738.4375" y2="738.4375" class="divider"></line><rect height="32.2969" width="207" x="673.5" y="720.2891" class="divider"></rect><text font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="185" x="683.5" y="741.2842" class="divider">Authenticated context</text><polygon points="1349,787.7188,1359,791.7188,1349,795.7188,1353,791.7188"></polygon><line x1="271" x2="1355" y1="791.7188" y2="791.7188"></line><circle r="14" cx="291.6" cy="775.6528" name="label" class="label"></circle><text font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="18" x="282" y="781.6528" class="labelText">14</text><text font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="401" x="312" y="782.6528">Send user authenticated calls with JWT in authorization header</text><polygon points="1077,824.8516,1067,828.8516,1077,832.8516,1073,828.8516"></polygon><line x1="1071" x2="1360" y1="828.8516" y2="828.8516"></line><circle r="14" cx="1096.6" cy="812.7856" name="label" class="label"></circle><text font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="18" x="1087" y="818.7856" class="labelText">15</text><text font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="233" x="1117" y="819.7856">Retrieve JSON Web key set endpoint</text><polygon points="1349,861.9844,1359,865.9844,1349,869.9844,1353,865.9844"></polygon><line x1="1066" x2="1355" y1="865.9844" y2="865.9844"></line><circle r="14" cx="1086.6" cy="849.9185" name="label" class="label"></circle><text font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="18" x="1077" y="855.9185" class="labelText">16</text><text font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="169" x="1107" y="856.9185">Returns JSON Web key set</text><line x1="1361" x2="1403" y1="903.1172" y2="903.1172"></line><line x1="1403" x2="1403" y1="903.1172" y2="916.1172"></line><line x1="1362" x2="1403" y1="916.1172" y2="916.1172"></line><polygon points="1372,912.1172,1362,916.1172,1372,920.1172,1368,916.1172"></polygon><circle r="14" cx="1381.6" cy="887.0513" name="label" class="label"></circle><text font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="18" x="1372" y="893.0513" class="labelText">17</text><text font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="141" x="1402" y="894.0513">Validate JWT with JWK</text><!--MD5=[622e085aa6d4cf646ae1dad15f4ebab8]
+@startuml
+autonumber 1
+
+actor user
+participant "Digital Channel" as app
+database "Local storage" as local
+participant "SF Commerce Cloud" as sf
+participant "SAP API Management" as api
+
+user -> app: Enters credentials, submits
+app -> sf: Send credentials via API POST /customers/auth with Authorization header "Basic Auth"
+sf - -> app: Access & refresh token (JWT)
+app -> app: Show dialog for pincode
+user -> app: Enters pincode
+app -> app : Stores JWT Token encrypted with pinocde & store hashed value of pincode
+app -> app : Shows biometrics option
+alt enables (optional)
+    user -> app: Clicks yes
+    app -> app: Stores refresh token, which is only accessible via biometrics option (restricted by the device)
+end
+app -> app: Access token stored in memory
+app -> sf: Retrieve user info /customers/{customer_id}
+sf - -> app: Respond with user info
+app -> app: Redirect to home screen
+== Authenticated context==
+app -> api: Send user authenticated calls with JWT in authorization header
+api -> sf : Retrieve JSON Web key set endpoint
+sf - -> api : Returns JSON Web key set
+api -> api : Validate JWT with JWK
+
+hide footbox 
+skinparam Shadowing false 
+skinparam notefontsize 12  
+skinparam ParticipantPadding  0 
+skinparam ParticipantFontSize 16 
+skinparam ActorFontSize 16 
+skinparam ArrowFontSize 13 
+skinparam SequenceDividerFontSize 14 
+skinparam BoxPadding 15 
+skinparam SequenceTitleFontSize 17 
+skinparam titleBorderThickness 2
+skinparam   Padding  4 
+ skinparam roundcorner 1
+@enduml
+
+PlantUML version 1.2021.12(Tue Oct 05 16:01:58 UTC 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
